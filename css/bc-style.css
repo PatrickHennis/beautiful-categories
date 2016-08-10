@@ -1,0 +1,35 @@
+.bc-img img {
+  border: 1px solid #ddd;
+  padding: 4px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+.bc-title {
+  font-size: 20px;
+  border-bottom: 1px solid #aba5a5; 
+}
+.bc-left {
+  text-align: left;
+}
+.bc-right {
+  text-align: right;
+}
+.bc-center {
+  text-align: center;
+}
+.bc-read-more {
+  background-color: #eee;
+  padding: 10px;
+  color: #000;
+  font-weight: 300; 
+}
+.bc-read-more:hover {
+  background-color: #aba5a5;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+}
+.bc-item {
+  margin-bottom: 40px; 
+}
