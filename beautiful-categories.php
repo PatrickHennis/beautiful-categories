@@ -6,9 +6,8 @@
  * Version: 0.0.3
  * Author: Patrick Hennis
  * Author URI: http://www.glacieren.com
+ * License: GPLv2 or any later version
  *
- * @package Beautiful Categories
- * @version 0.1
  * @author Patrick Hennis <patrick@glacieren.com>
  * @copyright Copyright (c) 2016, Patrick Hennis
  * @link http://www.glacieren.com/beautiful-categories.html/
