@@ -3,7 +3,7 @@
  * Plugin Name: Beautiful Categories
  * Plugin URI: http://www.glacieren.com/beautiful-categories.html/
  * Description: Display a beautiful listing of posts using the [bc] shortcode
- * Version: 0.0.4
+ * Version: 0.0.5
  * Author: Patrick Hennis
  * Author URI: http://www.glacieren.com
  * License: GPLv2 or any later version
@@ -12,20 +12,18 @@
  * @copyright Copyright (c) 2016, Patrick Hennis
  * @link http://www.glacieren.com/beautiful-categories.html/
  */
-
 //add custom style
 add_action('init', 'load_css');
-function load_css() {
-  wp_register_style( 'bc-style', plugins_url('/css/bc-style.css', __FILE__), false, '1.0.0', 'all');
+function beautiful_categories_register_style() {
+    wp_register_style( 'bc-style', plugins_url('/css/bc-style.css', __FILE__), false, '1.0.0', 'all');
 }
 add_action('wp_enqueue_scripts', 'load_style');
-function load_style(){
-  wp_enqueue_style( 'bc-style' );
+function beautiful_categories_enqueue_style(){
+   wp_enqueue_style( 'bc-style' );
 }
 
 //add shortcode
 add_shortcode( 'bc', 'beautiful_categories' );
-
 //function for shortcode
 function beautiful_categories( $atts ) {
   
