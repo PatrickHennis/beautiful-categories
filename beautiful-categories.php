@@ -13,11 +13,11 @@
  * @link http://www.glacieren.com/beautiful-categories.html/
  */
 //add custom style
-add_action('init', 'load_css');
+add_action('init', 'beautiful_categories_register_style');
 function beautiful_categories_register_style() {
     wp_register_style( 'bc-style', plugins_url('/css/bc-style.css', __FILE__), false, '1.0.0', 'all');
 }
-add_action('wp_enqueue_scripts', 'load_style');
+add_action('wp_enqueue_scripts', 'beautiful_categories_enqueue_style');
 function beautiful_categories_enqueue_style(){
    wp_enqueue_style( 'bc-style' );
 }
